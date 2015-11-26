@@ -1,0 +1,119 @@
+\documentclass[c,12pt]{beamer}
+%
+% Packages pour le français
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage[frenchb]{babel}
+%
+% pour un pdf lisible à l'écran
+% il y a d'autres choix possibles 
+\usepackage{pslatex}
+%
+% pour le style et couleurs
+\usetheme[secheader]{Madrid}
+\usecolortheme{whale}
+\useinnertheme[shadow]{rounded}
+\useoutertheme{infolines}
+
+\makeatother
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle\hspace*{3em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+%
+% contenu de la page de titre
+\title{La suprématie des claviers ERTY, pourquoi et comment lutter ?}
+%\subtitle{How to keyboard}
+\author{Meven "mevouc" \bsc{Courouble}}
+\date{\oldstylenums{December 2015}}
+
+\logo{\includegraphics[height=0.5cm]{GConfs.png}}
+
+\AtBeginSection[]{
+	\begin{frame}{Sommaire}
+		\tableofcontents[currentsection, hideothersubsections]
+	\end{frame}
+}
+
+%
+% Fin du préambule
+%
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{Pour commencer}
+\subsection{Historique}
+
+\begin{frame}
+	\frametitle{\subsecname}
+	\begin{itemize}
+		\item<1-> Début XIX\ieme siècle : Développement de la machine à écrire
+			\begin{itemize}
+				\item<2-> Nécessité de normaliser la position des touches
+				\item<3-> Apparition des dactylographes : Rapidité, précision
+			\end{itemize}
+		\item<4-> 1873 : Disposition QWERTY
+			\begin{itemize}
+				\item<5-> Pallier à des contraintes mécaniques 
+				\item<6-> AZERTY déposé une vingtaine d'années plus tard
+			\end{itemize}
+		\item<7-> 1930 : Dvorak, apparition de dispositions alternatives
+	\end{itemize}
+\end{frame}
+
+\subsection{Terminologie}
+
+\begin{frame}
+	\onslide<1->
+	\frametitle{\subsecname}
+	\onslide<2->
+	\begin{block}{Clavier}
+		Périphérique physique permettant la saisie textuelle.
+	\end{block}
+	\onslide<3->
+	\begin{block}{Disposition (Keymap)}
+		Interprétation logique de chaque touche par l'OS, le logiciel, etc.
+	\end{block}
+\end{frame}
+
+
+\end{document}
+
+% Pour commencer
+%		Historique
+%		Terminologie
+% Stop aux ERTY, pourquoi ?
+%		Lents
+%		Incite à regarder le clavier
+%		Ne contient pas tous les caractères
+%		Certaines touches trop éloignées (Enter, Echap)
+%		Mauvaise position des doigts et des mains -> Arthrose doigts et mains
+%		Fierté personnelle :D
+% Comment ?
+%		Changer de Keymap
+%			Dvorak
+%			Dvorak-fr
+%			Bépo
+%			Son propre mapping : CapsLock-Escape, Compose
+%		Changer de clavier
+%			Clavier méca > all
+%			claviers matriciels
+%			claviers ergonomiques (scindés, inclinés, etc.)
+%		Changer ses habitudes
+%			Utiliser les repères sur les touches centrales
+%			Utiliser tous ses doigts
+%			Stop au pavé numérique -> trop loin
+%			Utiliser les 2 shifts, les 2 alt, les 2 Ctrl
+%			Bonus : Refaire ses bindings dans ses logiciels favoris
+%			Utiliser des logiciels avec des bindings pratiques

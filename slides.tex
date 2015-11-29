@@ -6,6 +6,9 @@
 
 % readable pdf
 \usepackage{pslatex}
+\usepackage{alltt}
+\usepackage{verbatim}
+\usepackage{moreverb}
 
 \usetheme[secheader]{Madrid}
 \usecolortheme{whale}
@@ -30,7 +33,7 @@
 % contenu de la page de titre
 \title{La suprématie des claviers ERTY : pourquoi et comment lutter ?}
 %\subtitle{How to keyboard}
-\author{Meven "mevouc" \bsc{Courouble}}
+\author{Meven \texttt{'mevouc'} \bsc{Courouble}}
 \date{\oldstylenums{3 décembre 2015}}
 
 \logo{\includegraphics[height=0.5cm]{GConfs.png}}
@@ -53,18 +56,18 @@
 \begin{frame}
 	\frametitle{\subsecname}
 	\begin{itemize}
-		\item<1-> Début XIX\ieme siècle : Développement de la machine à écrire
+		\item<1-> \textbf{XIX\ieme siècle :} Développement de la machine à écrire
 			\begin{itemize}
 				\item<2-> Nécessité de normaliser la position des touches
 				\item<3-> Apparition des dactylographes : Rapidité, précision
 			\end{itemize}
-		\item<4-> 1873 : Disposition QWERTY
+		\item<4-> \textbf{1873 :} Disposition QWERTY
 			\begin{itemize}
 				\item<5-> Pallier à des contraintes mécaniques sur les machines à écrire
 				\item<6-> AZERTY déposé une vingtaine d'années plus tard
 			\end{itemize}
-		\item<7-> 1930 : Dvorak, apparition de dispositions alternatives
-		\item Années 1960 : Premiers claviers d'ordinateurs
+		\item<7-> \textbf{1930 :} Dvorak, apparition de dispositions alternatives
+		\item \textbf{Années 1960 :} Premiers claviers d'ordinateurs
 	\end{itemize}
 \end{frame}
 
@@ -100,7 +103,7 @@
 \begin{frame}
 	\frametitle{\subsecname}
 	\begin{itemize}
-		\item<1->{Touches trop éloignées (Enter, Echap)}
+		\item<1->{Touches trop éloignées (\texttt{Enter}, \texttt{Esc})}
 		\item<2->{Aucune logique dans la disposition des lettres}
 		\item<3->{Dispositions classiques incitent à regarder son clavier}
 	\end{itemize}
@@ -115,7 +118,7 @@
 			\begin{itemize}
 				\item{Peut provoquer à terme des problèmes d'arthrose}
 			\end{itemize}
-		\item<2->{Fierté personnelle}
+		\item<2->{Fierté personnelle \texttt{:D}}
 	\end{itemize}
 \end{frame}
 
@@ -168,10 +171,22 @@
 		\item<1->{Une keymap adaptée à sa langue d'écriture}
 		\item<2->{Son propre mapping}
 			\begin{itemize}
-				\item{Swap CapsLock et Echap}
-				\item{Utiliser des macros}
-				\item{Touche morte (touche Compose)}
+				\item<3->{Swap \texttt{CapsLock} et \texttt{Esc}}
+				\item<4->{Utiliser des macros}
+				\item<5->{Touche morte (touche \texttt{Compose})}
 			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{Changer de clavier}
+
+\begin{frame}
+	\onslide<1->
+	\frametitle{\subsecname}
+	\begin{itemize}
+		\item<2->{Claviers mécaniques}
+		\item<3->{Claviers matriciels}
+		\item<4->{Claviers ergonomiques}
 	\end{itemize}
 \end{frame}
 
@@ -185,7 +200,7 @@
 %		Lents
 %		Incite à regarder le clavier
 %		Ne contient pas tous les caractères
-%		Certaines touches trop éloignées (Enter, Echap)
+%		Certaines touches trop éloignées (Enter, Esc)
 %		Mauvaise position des doigts et des mains -> Arthrose doigts et mains
 %		Fierté personnelle :D
 % Comment ?

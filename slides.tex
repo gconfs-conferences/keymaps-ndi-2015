@@ -10,6 +10,10 @@
 \usepackage{verbatim}
 \usepackage{moreverb}
 
+\usepackage{graphicx}
+\usepackage{animate}
+\usepackage{xmpmulti}
+
 \usetheme[secheader]{Madrid}
 \usecolortheme{whale}
 \useinnertheme[shadow]{rounded}
@@ -136,7 +140,7 @@
 \begin{frame}
 	\frametitle{Dvorak}
 	\begin{center}
-		\includegraphics[scale=0.26]{Dvorak_.png}
+		\includegraphics[scale=0.26]{Dvorak.png}
 	\end{center}
 \end{frame}
 
@@ -188,6 +192,14 @@
 		\item<3->{Claviers matriciels}
 		\item<4->{Claviers ergonomiques}
 	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Switch mécanique}
+	\begin{center}
+		\transduration<0-54>{0.02}
+		\multiinclude[<+->][format=png]{meca/meca}
+	\end{center}
 \end{frame}
 
 

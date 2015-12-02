@@ -1,5 +1,5 @@
 CC=pdflatex
-SRC=slides.tex
+SRC=keyboards-slides.tex
 all:
 	${CC} ${SRC}
 
